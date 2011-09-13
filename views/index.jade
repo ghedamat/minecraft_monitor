@@ -1,0 +1,13 @@
+h1 Minecraft Monitor
+p Welcome to #{title}
+
+#text
+
+script(src="/socket.io/socket.io.js")
+script(type='text/javascript')
+  var socket = io.connect('http://localhost');
+  socket.on('news', function (data) {
+    console.log(data);
+    $('#text').append('<p>' + data + '</p>');
+    socket.emit('my other event', { my: 'data' });
+  });

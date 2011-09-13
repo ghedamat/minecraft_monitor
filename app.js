@@ -57,7 +57,7 @@ var sys = require('sys');
 var fs = require('fs');
 var spawn = require('child_process').spawn;
 var log=''
-var filename = "/home/tha/log"
+var filename = "/Users/tha/log"
   /*var tail = process.createChildProcess("tail", ["-f", filename]);*/
 var tail = spawn("tail", ["-f", filename]);
 sys.puts("start tailing");

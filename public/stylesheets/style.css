@@ -1,7 +1,8 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url('/images/bg.jpg');
-  color: white;}
+  color: white;
+  margin: 0px;}
 
 a {
   color: #00B7FF;}
@@ -25,8 +26,12 @@ a {
   top: 0px;
   lef: t;}
 
+.clear {
+  clear: both;
+  width: : 100%;}
+
 #logger {
-  width: 72.916% ;
+  width: 70%;
   margin-left: 0px;
   padding: 10px;
   border: 1px solid #735037;
@@ -35,4 +40,31 @@ a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  min-height: 300px;}
+  min-height: 300px;
+  float: left;}
+
+#buttons {
+  width: 20%;
+  margin-left: 6%;
+  float: left;}
+#buttons .button {
+  clear: both;
+  width: 90%;
+  margin: 10px auto;
+  height: 50px;
+  float: left;
+  background-color: #666666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;}
+#buttons span.img {
+  background-image: url('/images/ico.jpg');;
+  background-repeat: no-repeat;
+  margin: 10px;
+  width: 31px;
+  height: 31px;
+  display: block;
+  float: left;}
+#buttons span {
+  float: left;
+  display: block;}
